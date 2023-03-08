@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
+            <ul class="menu" id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Courses learned</a></li>
+                <li><a href="#portfolio">Certifications</a></li>
+                <li><a href="#contact">Projects</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </div>
+    </div>
+    <!-- home section start -->
+    <div class="home" id="home">
+        <div class="max-width">
+            <div class="home-content" id="left">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Ganesh Narugaru</div>
+                <div class="text">Iam a creative <span>Web Developer</span></div>
+                <div class="text-3">I am a graduate in Computer science an engineering.Iam a frontend web Developer
+                    and Iam skilled at DataStructures and algorithms and I completed 200+ problems in GFG...
+                </div>
+                <a href="./images/GANESH_N-Resume.pdf" download><button class="button">Downlowd CV</button></a>
+            </div>
+            <div class="right">
+                <img src="./images/pic_ganesh.jpg" alt="" width="70%" height="70%" 
+                style="border-radius: 30px;">
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/pic2_ganesh.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitles">About me</h1>
+                    <p>
+                        Hello, my name is Ganesh Narugaru. I doing my Bachelor's degree(BTech) in Computer Science Engineering 
+                        from SriVenkateshwara(SV) University. During my studies, I worked on several projects that allowed me to gain practical 
+                        experience in web development, including developing a ecommerse website for which I got a first prize in our 
+                        University.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Internships')">Internships</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills"><ul>
+                        <li><span>Data Structures and algorithms</span><br>Completed 12 months DSA course in java in 6 months and get certified by log2base2</li>
+                        <li><span>Oop's Concept</span><br>Completed the Oop's concept in java </li>
+                        <li><span>Web Development</span><br>In frontend, Iam skilled at HTML,CSS,JAVASCRIPT and In backend,
+                        Iam skilled at frameworks ie., Django,NodeJs,ExpressJS,PHP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Internships"><ul>
+                        <li>
+                        I have not completed an internship yet, but I have gained relevant experience 
+                        through my coursework and extracurricular activities. For example, I have completed 
+                        several projects that required me to work in teams, develop problem-solving skills, 
+                        and apply programming concepts. I have also participated in coding competitions and 
+                        hackathons, where I have been able to test my skills in a competitive setting. 
+                        While I have not completed an internship,but in next three months I complete minimum two Internships.
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id="Education"><ul>
+                        <li>
+                            I studying my B.Tech in Computer Science Engineering from Sri Venkateshwara University College of Engineering.
+                            During my studies, I focused on a variety of subjects including programming, algorithms, databases, web development, and computer networks.
+                        </li>
+                        <li><span>Programming</span><br>Iam really passionate about programming and problem solving.I earned arount 300 points in GFG problem-solving</li>
+                        <li><span>Databases</span><br>
+                            I'm extremely excited about databases and their potential to revolutionize the way we store, manage, and analyze data.
+                            I'm fascinated by the way that they can be used to power everything from e-commerce websites to complex financial systems.
+                            Recently I completed MySql,MongoDB,PostgreSql databases.
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- -------------------services----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" style="margin-left: 10px;">Courses learned</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Skilled at creating Responsive websites.I completed Django, NodeJS, ExpressJS, PHP,
+                        JAVASCRIPT, HTML, CSS,
+                        JQuery.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>DataBase management system</h2>
+                    <p>
+                        Interested in doing the queries in free time.I completed MySql, PostgreSql and MongoDB databases.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Problem solving and Algorithms</h2>
+                    <p>
+                        Skilled at coding in python,java,c++.Started solving problem on Algorithms.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------portfolio------------------------- -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Certifications</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/cer1.jpg" alt="">
+                </div>
+                <div class="work">
+                    <img src="./images/cer2.png" alt="">
+                    
+                </div>
+                <div class="work">
+                    <img src="./images/cer3.jpg" alt="">
+                    
+                </div>
+            </div>
+            <a href="#home" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- --------------------------contact------------------------------ -->
+    <hr width="36%">
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me :-</h1>
+                    <p>gn03am@gmail.com <span style="color: red;"><i class="fa-solid fa-paper-plane"></i></span></p>
+                    <p>1234567890<span style="color: green;"><i class="fa-solid fa-phone"></i></span></p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/time_todo_official" target="_blank" style="color: rgb(226, 74, 226);"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://github.com/gnnature" target="_blank" style="color: darkblue;"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/Time_todo_offic" 
+                        target="_blank" style="color: rgb(84, 81, 248);"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/ganesh-narugaru" target="_blank" style="color: rgb(23, 162, 222);"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./images/GANESH_N-Resume.pdf" download class="btn btn2">Downlowd CV</a>
+                </div>
+                <div class="line"></div>
+                <div class="contact-right">
+                 <h1>My Projects</h1>
+                    <div class="projects">
+                        <div class="pro">
+                            <img src="./images/backend.jpg" alt="">
+                            <div class="descrip">
+                                <h3>Ecommerse Website</h3>
+                                <p>
+                                    click on below button to view Ecommerse project
+                                </p>
+                                <a href="https://google.com"><i class="fa-solid fa-hand"></i></a>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <img src="./images/frontend2.jpg" alt="">
+                            <div class="descrip">
+                                <h3>Dynamic web using django</h3>
+                                <p>
+                                   Click on below button to view django project
+                                </p>
+                                <a href="https://google.com"><i class="fa-solid fa-hand"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="1">Project1</span><br>
+                    <p>
+                        I am really very passionate in doing projects.So, I done the project  "Ecommerse website"
+                        using the frameworks Html, Bootstrap, JAVASCRIPT, PostgreSql..
+                    </p><br>
+                    <span class="2">Project2</span>
+                    <p>
+                        While I'm doing Ecommerse project I get the interest in Backend Development.On that way 
+                        ,I started the dynamic website using Django framework and now it is completed successfully.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------footer------------------------------- -->
+    <div class="footer">
+        <h2>My extra activities</h2>
+        <p class="p1">
+            Apart from academics, I have also actively participated in extracurricular activities like 
+            coding clubs, tech events, and workshops. These activities helped me to hone my skills and 
+            develop a network of peers with similar interests.
+        </p>
+        <p class="p2">
+            I have participated in over 5 hackathons and coding competitions, where I have developed solutions 
+            to real-world problems. I have won 3 awards and accolades for my problem-solving abilities and 
+            innovative thinking.
+        </p>
+        <p class="p3">
+            Competitive programming is my hobby that allows me to test my problem-solving and coding skills against other talented programmers.
+            So, I participate in coding competitions or online challenges atleast twice a week.
+        </p>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
